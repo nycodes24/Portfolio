@@ -39,15 +39,14 @@
         <section id="projects">
             <div class="container">
                 <h2>Projects</h2>
-                <!-- Project 1 -->
-                <div class="project">
-                    <h3>Shopping Site Design</h3>
-                    <img src="shopping_site_screenshot.jpg" alt="Shopping Site" class="project-image">
-                    <p>Designed a custom e-commerce site for a boutique, integrating product listings, inventory management, and payment systems.</p>
-                    <p><strong>Technologies Used:</strong> Shopify, Canva.</p>
-                    <a href="https://theboutiquebae.store/" target="_blank">View Project</a>
+                <!-- Main Projects Button -->
+                <button id="projectsBtn" onclick="toggleProjectLinks()">Projects</button>
+
+                <!-- Dropdown for Project Categories -->
+                <div id="projectLinks" class="hidden">
+                    <button class="project-category-btn" onclick="window.location.href='link-to-html-css-projects.html'">HTML & CSS Projects</button>
+                    <button class="project-category-btn" onclick="window.location.href='link-to-javascript-projects.html'">JavaScript Projects</button>
                 </div>
-                <!-- Add more projects -->
             </div>
         </section>
 
@@ -101,6 +100,18 @@
     <footer>
         <p>&copy; 2024 Nya Hardin. All rights reserved.</p>
     </footer>
+
+    <script>
+        // JavaScript to toggle visibility of project category buttons
+        function toggleProjectLinks() {
+            const projectLinks = document.getElementById("projectLinks");
+            if (projectLinks.classList.contains("hidden")) {
+                projectLinks.classList.remove("hidden");
+            } else {
+                projectLinks.classList.add("hidden");
+            }
+        }
+    </script>
 </body>
 </html>
 
