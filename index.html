@@ -74,20 +74,19 @@
                 <h2>Experience</h2>
                 <!-- Job 1 -->
                 <div class="job">
-                    
-                 <!--   <h3>Data Entry Specialist</h3
+                    <h3>Data Entry Specialist</h3>
                     <p><strong>The Business Center</strong></p>
                     <p><em>04/2024 - 01/2025</em></p>
                     <ul>
                         <li>Reviewed and corrected over 1,000 data records weekly, ensuring accuracy and consistency.</li>
                         <li>Contributed to website optimization by identifying accessibility issues and making recommendations.</li>
-                    </ul>-->
+                    </ul>
                 </div>
-        
+                <!-- Add more jobs -->
 
                 <!-- Resume Button -->
                 <div class="resume-button-container">
-                    <a href="https://docs.google.com/document/d/e/2PACX-1vQpay3zc8L8UzMCjQRZwnLlZOOFwfrIvA7o44p-cnyN5d2W7fRJ6Di_KvGadtNAnLBBPLo_01VYhVkm/pub" class="resume-button" target="_blank">View Resume</a>
+                    <a href="your-resume.pdf" class="resume-button" target="_blank">View Resume</a>
                 </div>
             </div>
         </section>
@@ -108,6 +107,9 @@
         <p>&copy; 2024 Nya Hardin. All rights reserved.</p>
     </footer>
 
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">Back to Top</a>
+
     <script>
         // JavaScript to toggle visibility of project category buttons
         function toggleProjectLinks() {
@@ -118,6 +120,15 @@
                 projectLinks.classList.add("hidden");
             }
         }
+
+        // JavaScript to smooth scroll back to the top
+        document.querySelector('.back-to-top').addEventListener('click', function (e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // This creates a smooth scrolling effect
+            });
+        });
     </script>
 </body>
 </html>
