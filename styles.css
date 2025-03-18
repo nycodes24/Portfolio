@@ -139,35 +139,24 @@ li p {
   transform: scale(1.05); /* Slight scale effect on hover */
 }
 
-/* Footer */
-footer {
+/* Back to Top Button Styles */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;  /* Position the button 20px from the bottom */
+  right: 20px;   /* Position the button 20px from the right */
+  background-color: #ff7f50; /* Matching the pastel orange theme */
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 1.5em;
   text-align: center;
-  font-size: 0.9em;
-  color: #666;
-  margin-top: 30px;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-footer p {
-  margin-top: 10px;
-  color: #ff7f50; /* Pastel orange for footer text */
+.back-to-top:hover {
+  background-color: #e76f4d; /* Slightly darker shade on hover */
+  transform: scale(1.1); /* Slightly enlarge the button on hover */
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 2em;
-  }
-
-  header h2 {
-    font-size: 1em;
-  }
-
-  .container {
-    width: 90%;
-  }
-
-  .skills {
-    flex-direction: column;
-    align-items: center;
-  }
-}
